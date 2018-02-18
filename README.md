@@ -57,7 +57,7 @@ The default behavior of the scripts is to turn the VGA output on/off and ajust t
 
 ## License
 
-This project is licensed under GPL - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under GPL - see the [LICENSE](LICENSE) file for details
 If you think it should be under some other license, let me know, I don't have strong feelings about any of it, GPL just seems like a safe default.
 
 ## Acknowledgments
