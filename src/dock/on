@@ -1,0 +1,18 @@
+#!/bin/bash
+echo Starting docking script $0 
+for i in $(seq 1 10);
+do
+    xrandr -d :0.0 | grep " connected" | grep -v LVDS1
+    outputs=$(xrandr -d :0.0 | grep " connected" | grep -v LVDS1 | wc -l)
+    echo $outputs
+    if [ "$ouputs" > 0 ]; then
+	echo Waiting for VGA to come up
+	sleep 0.5
+    else
+	echo Found $outputs
+	echo xrandr -d :0.0 | grep " connected" | grep -v LVDS1
+	break;
+    fi
+done
+sleep 2
+dock
