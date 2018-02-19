@@ -11,7 +11,7 @@ xrandr --output LVDS1 --pos 0x1080 --primary
 ################################# Use proper conky config ################################
 ##########################################################################################
 if ! ls -l ~/.conkyrc | grep -q LVDS; then
-    ln -sf ~/.conkyrc.LVDS ~/.conkyrc
+    ln -sf ~/.conkyrc.900p.LVDS ~/.conkyrc
     killall -USR1 conky;
 fi
 

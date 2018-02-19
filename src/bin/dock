@@ -24,7 +24,7 @@ xrandr --output LVDS1 --pos 0x1080 --primary
 ################################# Use proper conky config ################################
 ##########################################################################################
 if ! ls -l ~/.conkyrc | grep -q VGA; then  
-    ln -sf ~/.conkyrc.VGA ~/.conkyrc
+    ln -sf ~/.conkyrc.900p.VGA ~/.conkyrc
     killall -USR1 conky;
 fi
 
